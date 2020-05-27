@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<header
+  className="nav-head"
+>
+  <nav
+    className="navigation"
+  >
+    <div>
+      <button
+        className="button"
+      >
+        <div
+          className="line"
+        />
+        <div
+          className="line"
+        />
+        <div
+          className="line"
+        />
+      </button>
+    </div>
+    <div
+      className="nav-logos"
+    >
+      <a
+        data-testid="img"
+        href="/landing"
+        style={
+          Object {
+            "textShadow": "1px 1px 2px black",
+          }
+        }
+      >
+        <img
+          alt="logo"
+          src="note.png"
+          style={
+            Object {
+              "height": "70px",
+            }
+          }
+        />
+        TO DO
+      </a>
+    </div>
+    <div
+      className="spacer"
+    />
+  </nav>
+</header>
+`;

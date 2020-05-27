@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav-head{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: orange;
+    height: 73px;
+    -webkit-box-shadow: -1px 4px 12px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: -1px 4px 12px 1px rgba(0,0,0,0.5);
+box-shadow: -1px 4px 12px 1px rgba(0,0,0,0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 2rem;
+}
+.nav-logos{
+    margin-left: 1rem;
+}
+.nav-logos a{
+    color: white;
+    text-decoration: none; 
+    font-size: 1.5rem;
+    font-family: cursive;   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.items a{
+    color: white;
+    text-decoration:none ;
+    font-family: cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.spacer{
+    flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.items li{
+    padding: 0 0.5rem;
+}
+
+.items a:hover, .items a:active{
+    color: black
+}
+
+.nav-logos a:hover, .nav-logos a:active{
+    color: black
+}
+
+#divhover h5:hover, #divhover h5:active{
+    color: orange;
+}
+
+#img{
+    background-image: url("./components/Landing/Landing.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+tbody:nth-of-type(even) {
+    background-color: #e9e9f9 ;
 }

@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+    }
+  }
+>
+  <header
+    className="nav-head"
+  >
+    <nav
+      className="navigation"
+    >
+      <div>
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          <div
+            className="line"
+          />
+          <div
+            className="line"
+          />
+          <div
+            className="line"
+          />
+        </button>
+      </div>
+      <div
+        className="nav-logos"
+      >
+        <a
+          data-testid="img"
+          href="/landing"
+          style={
+            Object {
+              "textShadow": "1px 1px 2px black",
+            }
+          }
+        >
+          <img
+            alt="logo"
+            src="note.png"
+            style={
+              Object {
+                "height": "70px",
+              }
+            }
+          />
+          TO DO
+        </a>
+      </div>
+      <div
+        className="spacer"
+      />
+    </nav>
+  </header>
+  <nav
+    className="sidebar"
+  >
+    <div
+      className="pro"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="logo"
+          src="profile.png"
+          style={
+            Object {
+              "height": "70px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "marginLeft": "40px",
+            }
+          }
+        >
+          Welcome
+        </span>
+      </a>
+    </div>
+    <hr
+      style={
+        Object {
+          "backgroundColor": "orange",
+          "height": "1.2px",
+          "margin": "3px 5px",
+        }
+      }
+    />
+    <ul>
+      <li
+        data-testid="list"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-line-chart"
+        />
+        <a
+          href="/dashboard"
+          onClick={[Function]}
+        >
+          Dashboard
+        </a>
+        <i
+          aria-hidden="true"
+          className="fa fa-arrow-circle-right"
+          style={
+            Object {
+              "marginLeft": "120px",
+            }
+          }
+        />
+      </li>
+      <li
+        data-testid="list1"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-plus-circle"
+        />
+        <a
+          href="/add"
+          onClick={[Function]}
+        >
+          Add To-DO
+        </a>
+        <i
+          aria-hidden="true"
+          className="fa fa-arrow-circle-right"
+          style={
+            Object {
+              "marginLeft": "110px",
+            }
+          }
+        />
+      </li>
+      <li
+        data-testid="list2"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-eye"
+        />
+        <a
+          href="/view"
+          onClick={[Function]}
+        >
+          View To-DO
+        </a>
+        <i
+          aria-hidden="true"
+          className="fa fa-arrow-circle-right"
+          style={
+            Object {
+              "marginLeft": "103px",
+            }
+          }
+        />
+      </li>
+      <li
+        data-testid="list3"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-map-marker"
+        />
+        <a
+          href="/map"
+          onClick={[Function]}
+        >
+          View Map
+        </a>
+        <i
+          aria-hidden="true"
+          className="fa fa-arrow-circle-right"
+          style={
+            Object {
+              "marginLeft": "132px",
+            }
+          }
+        />
+      </li>
+    </ul>
+  </nav>
+  <main
+    style={
+      Object {
+        "marginTop": "2px",
+      }
+    }
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="d-sm-flex align-items-center justify-content-between mb-4"
+        data-testid="heading"
+      >
+        <h1
+          style={
+            Object {
+              "color": "#8B4513",
+              "fontFamily": "cursive",
+              "margin": "30px 30%",
+            }
+          }
+        >
+          Sign In
+          <i
+            className="fa fa-sign-in"
+            style={
+              Object {
+                "color": "#8B4513",
+                "marginLeft": "20px",
+              }
+            }
+          />
+        </h1>
+      </div>
+      <form
+        onSubmit={[Function]}
+        style={
+          Object {
+            "fontFamily": "cursive",
+            "marginLeft": "10%",
+            "width": "60%",
+          }
+        }
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="exampleInputEmail1"
+          >
+            Email address
+          </label>
+          <input
+            className="form-control"
+            id="email"
+            onChange={[Function]}
+            placeholder="Enter email"
+            required={true}
+            type="email"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="exampleInputPassword1"
+          >
+            Password
+          </label>
+          <input
+            className="form-control"
+            id="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+          />
+        </div>
+        <button
+          className="btn btn-warning mr-2 shadow"
+          data-testid="button"
+          type="submit"
+        >
+          Sign In
+        </button>
+        <a
+          href="/signup"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-primary mr-2 shadow"
+            data-testid="button1"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </a>
+        <a
+          href="/forget"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-danger shadow"
+            data-testid="button2"
+            type="submit"
+          >
+            Forget Password
+          </button>
+        </a>
+      </form>
+    </div>
+  </main>
+</div>
+`;

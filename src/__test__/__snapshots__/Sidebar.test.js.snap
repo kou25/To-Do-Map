@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<nav
+  className="sidebar"
+>
+  <div
+    className="pro"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="logo"
+        src="profile.png"
+        style={
+          Object {
+            "height": "70px",
+          }
+        }
+      />
+      <span
+        style={
+          Object {
+            "marginLeft": "40px",
+          }
+        }
+      >
+        Welcome
+      </span>
+    </a>
+  </div>
+  <hr
+    style={
+      Object {
+        "backgroundColor": "orange",
+        "height": "1.2px",
+        "margin": "3px 5px",
+      }
+    }
+  />
+  <ul>
+    <li
+      data-testid="list"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-line-chart"
+      />
+      <a
+        href="/dashboard"
+        onClick={[Function]}
+      >
+        Dashboard
+      </a>
+      <i
+        aria-hidden="true"
+        className="fa fa-arrow-circle-right"
+        style={
+          Object {
+            "marginLeft": "120px",
+          }
+        }
+      />
+    </li>
+    <li
+      data-testid="list1"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-plus-circle"
+      />
+      <a
+        href="/add"
+        onClick={[Function]}
+      >
+        Add To-DO
+      </a>
+      <i
+        aria-hidden="true"
+        className="fa fa-arrow-circle-right"
+        style={
+          Object {
+            "marginLeft": "110px",
+          }
+        }
+      />
+    </li>
+    <li
+      data-testid="list2"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-eye"
+      />
+      <a
+        href="/view"
+        onClick={[Function]}
+      >
+        View To-DO
+      </a>
+      <i
+        aria-hidden="true"
+        className="fa fa-arrow-circle-right"
+        style={
+          Object {
+            "marginLeft": "103px",
+          }
+        }
+      />
+    </li>
+    <li
+      data-testid="list3"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-map-marker"
+      />
+      <a
+        href="/map"
+        onClick={[Function]}
+      >
+        View Map
+      </a>
+      <i
+        aria-hidden="true"
+        className="fa fa-arrow-circle-right"
+        style={
+          Object {
+            "marginLeft": "132px",
+          }
+        }
+      />
+    </li>
+  </ul>
+</nav>
+`;

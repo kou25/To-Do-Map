@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="d-sm-flex align-items-center justify-content-between mb-4"
+  >
+    <h1
+      data-testid="heading"
+      style={
+        Object {
+          "color": "#8B4513",
+          "fontFamily": "cursive",
+          "margin": "50px 30%",
+          "textShadow": "1px 1px 2px black",
+        }
+      }
+    >
+      Add To-DO
+      <i
+        aria-hidden="true"
+        className="fa fa-plus-circle"
+        style={
+          Object {
+            "color": "#8B4513",
+            "marginLeft": "20px",
+          }
+        }
+      />
+    </h1>
+  </div>
+  <div
+    className="card shadow mb-2"
+    style={
+      Object {
+        "borderRadius": "20px",
+        "fontFamily": "cursive",
+        "marginLeft": "22%",
+        "width": "40%",
+      }
+    }
+  >
+    <div
+      className="card-body"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="name"
+          >
+            Pads
+          </label>
+          <input
+            className="form-control"
+            data-testid="name"
+            name="name"
+            onChange={[Function]}
+            placeholder="Enter name for to-do"
+            required={true}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="description"
+          >
+            To Dos
+          </label>
+          <br />
+          <small>
+            Add todo in each line
+          </small>
+          <textarea
+            className="form-control"
+            data-testid="desc"
+            name="desc"
+            onChange={[Function]}
+            placeholder="1. todo1"
+            required={true}
+            rows="3"
+            type="desc"
+            value=""
+          />
+        </div>
+        <button
+          className="btn btn-success"
+          data-testid="button"
+          type="submit"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

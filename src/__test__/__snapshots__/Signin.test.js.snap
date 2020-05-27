@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="d-sm-flex align-items-center justify-content-between mb-4"
+    data-testid="heading"
+  >
+    <h1
+      style={
+        Object {
+          "color": "#8B4513",
+          "fontFamily": "cursive",
+          "margin": "30px 30%",
+        }
+      }
+    >
+      Sign In
+      <i
+        className="fa fa-sign-in"
+        style={
+          Object {
+            "color": "#8B4513",
+            "marginLeft": "20px",
+          }
+        }
+      />
+    </h1>
+  </div>
+  <form
+    onSubmit={[Function]}
+    style={
+      Object {
+        "fontFamily": "cursive",
+        "marginLeft": "10%",
+        "width": "60%",
+      }
+    }
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="exampleInputEmail1"
+      >
+        Email address
+      </label>
+      <input
+        className="form-control"
+        id="email"
+        onChange={[Function]}
+        placeholder="Enter email"
+        required={true}
+        type="email"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="exampleInputPassword1"
+      >
+        Password
+      </label>
+      <input
+        className="form-control"
+        id="password"
+        onChange={[Function]}
+        placeholder="Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <button
+      className="btn btn-warning mr-2 shadow"
+      data-testid="button"
+      type="submit"
+    >
+      Sign In
+    </button>
+    <a
+      href="/signup"
+      onClick={[Function]}
+    >
+      <button
+        className="btn btn-primary mr-2 shadow"
+        data-testid="button1"
+        type="submit"
+      >
+        Sign Up
+      </button>
+    </a>
+    <a
+      href="/forget"
+      onClick={[Function]}
+    >
+      <button
+        className="btn btn-danger shadow"
+        data-testid="button2"
+        type="submit"
+      >
+        Forget Password
+      </button>
+    </a>
+  </form>
+</div>
+`;
