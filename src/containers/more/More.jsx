@@ -25,7 +25,7 @@ class More extends Component {
         return (
                 <div className="container">
                 <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 style={{color:"#8B4513",  fontFamily:"cursive", margin:"50px 30%"}}>More To Dos<i className="fa fa-comments" aria-hidden="true" style={{marginLeft:"20px", color:"#8B4513"}}></i></h1>
+                    <h1 style={{color:"#8B4513",textShadow:"1px 1px 2px black",  fontFamily:"cursive", margin:"50px 30%"}}>More To Dos<i className="fa fa-comments" aria-hidden="true" style={{marginLeft:"20px", color:"#8B4513"}}></i></h1>
                 </div>
                 <div className="card shadow" style={{width: "25rem",  fontFamily:"cursive", fontWeight:"bold", marginLeft:"27%", borderRadius:"25px"}}>
                     <div className="card-body">
