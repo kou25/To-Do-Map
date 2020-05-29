@@ -5,21 +5,32 @@ import {connect} from 'react-redux';
 import Spinner from '../../containers/view/Spinner'
 import { getMap,setLoading } from '../../actions/mapAction';
 import PropTypes from 'prop-types';
+import { Redirect} from 'react-router-dom'
 
 
 const TOKEN = 'pk.eyJ1Ijoia291MjUiLCJhIjoiY2thZXdiMmM3MDYwMTJ6cDllenNsZmZ4aCJ9.ofnuP4sxtei-PmV5p8HSsg';
 
 class Map extends Component {
-state={
-  viewport: {
-    latitude: 37.0479,
-    longitude: 180,
-    zoom: 1.7,
-    width: '100%',
-    height: 550,
-    bearing: 0,
-    pitch: 0
-}
+  constructor(props){
+    super(props)
+    const token = localStorage.getItem("token")
+
+    let loggedIn = true
+    if(token==null){
+        loggedIn = false
+    }
+  this.state={
+    loggedIn,
+    viewport: {
+      latitude: 37.0479,
+      longitude: 180,
+      zoom: 1.7,
+      width: '100%',
+      height: 550,
+      bearing: 0,
+      pitch: 0
+  }
+  }
 }
  
   componentDidMount(){
@@ -27,6 +38,9 @@ state={
     this.props.setLoading();
   }
   render() {
+    if(this.state.loggedIn === false){
+      return <Redirect to="/"/>
+  }
     const{viewport}=this.state;
     const{ data, loading}=this.props;
     return (

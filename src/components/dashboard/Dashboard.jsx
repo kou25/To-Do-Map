@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
 import {Bar, Line, Pie} from 'react-chartjs-2'
 import Clock from 'react-live-clock';
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 
 
 class Dashboard extends Component {
-   state={
+  constructor(props){
+    super(props)
+    const token = localStorage.getItem("token")
+
+    let loggedIn = true
+    if(token==null){
+        loggedIn = false
+    }
+        this.state={
+          loggedIn,
             chartData:{
                 labels: ['Indian Ocean', 'Kashmir', 'Bihar',
                  'Gujrat', 'Kangra', 'Assam'],
@@ -31,11 +40,16 @@ class Dashboard extends Component {
                       ]
             }
         ]
-        } 
+        }
     }
+  }
+
 
 
     render() {
+      if(this.state.loggedIn === false){
+        return <Redirect to="/"/>
+    }
         return (
 
             <div className="container-fluid">

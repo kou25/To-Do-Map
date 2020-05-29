@@ -3,9 +3,25 @@ import Todo from './Todo';
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types';
 import Spinner from './Spinner'
+import { Redirect} from 'react-router-dom'
+
 import { getTodos,setLoading } from '../../actions/todoAction'; 
 
  class View extends Component {
+  constructor(props){
+    super(props)
+    const token = localStorage.getItem("token")
+
+    let loggedIn = true
+    if(token==null){
+        loggedIn = false
+    }
+
+    this.state={
+        loggedIn
+    }
+}
+
   componentDidMount(){
       this.props.getTodos();
       this.props.setLoading();
@@ -13,6 +29,9 @@ import { getTodos,setLoading } from '../../actions/todoAction';
 
 
     render() {
+      if(this.state.loggedIn === false){
+        return <Redirect to="/"/>
+    }
         const{ todos, loading }=this.props; 
         return (
             <div className="container">

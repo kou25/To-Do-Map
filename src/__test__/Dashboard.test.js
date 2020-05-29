@@ -2,6 +2,7 @@ import React from 'react';
 import Dashboard from '../components/dashboard/Dashboard'
 import {render, cleanup} from '@testing-library/react'
 import "@testing-library/jest-dom/extend-expect"
+import { Router } from 'react-router-dom';
 
 
 afterEach(cleanup);
@@ -12,8 +13,3 @@ it('Renders a Chart', () => {
   expect(wrapper).toMatchSnapshot()
 })
 
-it("renders links correctly", ()=>{
-  const{getByTestId}=render(
-  <Dashboard/>)
-  expect(getByTestId('heading')).toHaveTextContent('Dashboard')
-})

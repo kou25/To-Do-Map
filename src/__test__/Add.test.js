@@ -3,7 +3,7 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import{render,  cleanup} from '@testing-library/react'
 import "@testing-library/jest-dom/extend-expect"
-import Add from '../components/add/Add'
+import Add from '../containers/add/Add'
 import {ADD_TODO} from '../actions/types'
 import renderer from 'react-test-renderer'
 
