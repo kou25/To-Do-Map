@@ -16,9 +16,9 @@
       "id": 3
     },
     {
+      "id": 4,
       "name": "Adventure",
-      "desc": "1. Trekking\n2. Climbing",
-      "id": 4
+      "desc": "1. Trekking\n"
     }
   ]
 }

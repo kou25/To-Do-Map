@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import {Redirect} from 'react-router-dom'
 
 
  class Signin extends Component {
-    state={
+    constructor(props){
+        super(props)
+        const token = localStorage.getItem("token")
+
+        let loggedIn = true
+        if(token == null){
+            loggedIn = false
+        
+    }
+    this.state={
             email:'',
-            password:''
+            password:'',
+            loggedIn
+            
         }
+    }
         handleChange=(e)=>{
             this.setState({
                 [e.target.id]: e.target.value
@@ -15,10 +28,27 @@ import { Link } from 'react-router-dom';
         handleSubmit=(e)=>{
             e.preventDefault()
             console.log(this.state)
-            this.props.history.push('/');
+            const{email, password} = this.state
+            //login
+            if(email==="koustav.manna98@gmail.com" && password==="1234" ){
+                localStorage.setItem("token","ajdkkabkdj")
+                this.setState({
+                    loggedIn: true
+                })  
+
+            }
+            else{
+                alert("Wrong username or password!")
+            }
+            
     }
+    
 
     render() {
+        if(this.state.loggedIn){
+            return <Redirect to="/landing"/>
+        }
+        
         return (
             <div className="container">
                 <div data-testid="heading" className="d-sm-flex align-items-center justify-content-between mb-4">

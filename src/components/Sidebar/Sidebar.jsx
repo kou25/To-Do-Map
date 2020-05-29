@@ -11,7 +11,7 @@ const Sidebar =props=> {
     return (
             <nav className={barClasses}>
                 <div className="pro">
-                <Link  to='/signin' >
+                <Link  to='/' >
                     <img src={profile} alt="logo" style={{height:"70px"}}/>
                     <span style={{marginLeft:"40px"}}>Welcome</span>
                 </Link>

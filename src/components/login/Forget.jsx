@@ -21,7 +21,7 @@ import React, { Component } from 'react'
                 alert('Password does not match !')
             }
             else{
-            this.props.history.push('/signin');
+            this.props.history.push('/');
             }
     }
 

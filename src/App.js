@@ -16,6 +16,7 @@ import Signin from './components/login/Signin';
 import SignUp from './components/login/SignUp';
 import Forget from './components/login/Forget';
 import Map from './components/map/Map'
+import Logout from './components/logout/Logout';
 
 
 
@@ -33,7 +34,7 @@ class App extends Component {
     this.setState({sidebarOpen: false})
   }
 
-  
+ 
 
   render(){
     let backdrop;
@@ -50,10 +51,10 @@ class App extends Component {
       {backdrop}
       <main style={{marginTop: '2px'}}>
         <Switch>
-        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/" component={Signin}/>}  />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/forget" component={Forget} />
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/landing" component={Landing} />
         <Route exact path="/dashboard" component={Dashboard}/>
         <Route exact path="/add" component={Add} />
         <Route exact path="/view" component={View} />
@@ -62,8 +63,9 @@ class App extends Component {
         <Route exact path="/more/:id" component={More} />
         </Switch>
       </main>
+      <Route exact path="/logout" component={Logout}/>
     </div>
-    </Router>
+     </Router>
     </Provider>
   );
 }
