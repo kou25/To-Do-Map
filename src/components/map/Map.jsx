@@ -39,8 +39,8 @@ class Map extends Component {
   }
   render() {
     if(this.state.loggedIn === false){
-      return <Redirect to="/"/>
-  }
+            return <Redirect to="/"/>
+        }
     const{viewport}=this.state;
     const{ data, loading}=this.props;
     return (

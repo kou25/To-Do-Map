@@ -20,6 +20,8 @@ import Logout from './components/logout/Logout';
 
 
 
+
+
 class App extends Component {
   state={
     sidebarOpen: false,
@@ -51,7 +53,7 @@ class App extends Component {
       {backdrop}
       <main style={{marginTop: '2px'}}>
         <Switch>
-        <Route exact path="/" component={Signin}/>}  />
+        <Route exact path="/" component={Signin} />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/forget" component={Forget} />
         <Route exact path="/landing" component={Landing} />
