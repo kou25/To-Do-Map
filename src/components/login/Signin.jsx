@@ -6,10 +6,12 @@ import "./style.scss";
 
 
  class Signin extends Component {
+     userData;
     constructor(props){
         super(props)
         const token = localStorage.getItem("token")
 
+        
         let loggedIn = true
         if(token == null){
             loggedIn = false
@@ -22,17 +24,23 @@ import "./style.scss";
             
         }
     }
-        handleChange=(e)=>{
+    
+    componentDidMount(){
+        this.userData = JSON.parse(localStorage.getItem('user'))
+        }
+
+    handleChange=(e)=>{
             this.setState({
                 [e.target.id]: e.target.value
             })
         }
-        handleSubmit=(e)=>{
+    handleSubmit=(e)=>{
             e.preventDefault()
             console.log(this.state)
             const{email, password} = this.state
+            
             //login
-            if(email==="koustav.manna98@gmail.com" && password==="1234" ){
+            if(email=== this.userData.email && password===this.userData.password ){
                 localStorage.setItem("token","ajdkkabkdj")
                 this.setState({
                     loggedIn: true
@@ -41,9 +49,9 @@ import "./style.scss";
             }
             else{
                 alert("Wrong username or password!")
-            }
-            
+            }      
     }
+
     
 
     render() {

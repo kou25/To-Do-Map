@@ -81,6 +81,7 @@ class Edit extends Component {
                                 <button type="submit" className="btn btn-success">Edit</button>
                         </form>
                     </div>
+                    <Right/>
                 </div>
             </div>
         )
@@ -97,7 +98,13 @@ const mapStateToProps=(state)=>({
     todo: state.todo.todo
 })
 
-
+const Right = props => {
+    return (
+      <div
+        className="right">
+      </div>
+    );
+  };
 
 export default connect(mapStateToProps,
     {getTodo, editTodo})(Edit);

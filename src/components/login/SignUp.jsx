@@ -3,12 +3,19 @@ import loginImg from "./signup.png";
 import "./style.scss";
 
 export default class SignUp extends Component {
+    userData;
+
     state={
             email:'',
             password:'',
-            firstName:'',
-            lastName:''
+            name:''
         }
+
+    
+    componentDidUpdate(nextProps, nextState){
+        localStorage.setItem('user', JSON.stringify(nextState))
+    }
+
     handleChange=(e)=>{
         this.setState({
             [e.target.id]: e.target.value
@@ -16,7 +23,12 @@ export default class SignUp extends Component {
     }
     handleSubmit=(e)=>{
         e.preventDefault()
-        console.log(this.state)
+        this.setState({
+            name:'',
+            email:'',
+            password:''
+        })
+
         this.props.history.push('/');
     }
 
@@ -38,6 +50,7 @@ export default class SignUp extends Component {
                     placeholder="Enter email"
                     id="email"
                     onChange={this.handleChange}
+                    value={this.state.email}
                     required/>
                 </div>
                 <div className="form-group">
@@ -47,6 +60,7 @@ export default class SignUp extends Component {
                     placeholder="Enter name"
                     id="name"
                     onChange={this.handleChange}
+                    value={this.state.name}
                     required/>
                 </div>
                 <div className="form-group mt-4 mb-5">
@@ -56,6 +70,7 @@ export default class SignUp extends Component {
                      placeholder="Password"
                      id="password"
                      onChange={this.handleChange}
+                    value={this.state.password}
                      required/>
                 </div>
                 <button data-testid="button" type="submit" className="btn btn-success  shadow"  

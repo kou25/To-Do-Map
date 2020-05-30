@@ -4,6 +4,7 @@ import "./style.scss";
 
 
  class Forget extends Component {
+   
     state={
             password:'',
             password2:''
@@ -14,6 +15,8 @@ import "./style.scss";
                 [e.target.id]: e.target.value
             })
         }
+
+
         handleSubmit=(e)=>{
             const { password, password2 } = this.state;
             e.preventDefault()

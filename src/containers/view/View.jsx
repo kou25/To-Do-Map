@@ -58,8 +58,11 @@ import { getTodos,setLoading } from '../../actions/todoAction';
                    todo={todo} 
                    />
                ))} 
+               
                </table>
-    }
+               
+            }
+           
             </div>
         )
     }
@@ -74,5 +77,7 @@ const mapStateToProps=(state)=>({
     todos: state.todo.todos,
     loading: state.todo.loading
 })
+
+
 
 export default connect(mapStateToProps, {getTodos, setLoading})(View);

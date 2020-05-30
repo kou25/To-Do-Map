@@ -70,6 +70,7 @@ class Add extends Component {
                                 <button type="submit" data-testid="button" className="btn btn-success">Add</button>
                         </form>
                     </div>
+                    <Right/>
                 </div>
             </div>
         )
@@ -78,6 +79,16 @@ class Add extends Component {
 
 Add.propTypes = {
     addTodo: PropTypes.func.isRequired
+  };
+
+
+
+  const Right = props => {
+    return (
+      <div
+        className="right">
+      </div>
+    );
   };
 
 export default connect(null, { addTodo})(Add);

@@ -67,7 +67,6 @@ class Map extends Component {
           <NavigationControl onViewportChange={viewport => this.setState({viewport})}/>
           </div>
         </MapGL>
-        
         </div>
   }
       </div>
@@ -83,5 +82,7 @@ Map.propTypes = {
   data: PropTypes.any.isRequired,
   getMap: PropTypes.func.isRequired
 };
+
+
 
 export default connect(mapStateToProps, {getMap, setLoading})(Map)

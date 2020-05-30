@@ -44,7 +44,8 @@ class More extends Component {
                         <Link to ={'/view'}>
                         <button className="btn btn-warning">Back</button>
                         </Link>
-                    </div>     
+                    </div> 
+                    <Right/>    
             </div>
             </div>
         )
@@ -54,6 +55,14 @@ class More extends Component {
 const mapStateToProps=(state)=>({
     todo: state.todo.todo
 })
+
+const Right = props => {
+    return (
+      <div
+        className="rights">
+      </div>
+    );
+  };
 
 export default connect(mapStateToProps,
     {getTodo})(More);
