@@ -15,13 +15,6 @@ it("render without crashing",()=>{
   </BrowserRouter>,div);
 })
 
-it("renders heading correctly", ()=>{
-    const{getByTestId}=render(
-    <BrowserRouter>
-      <Signin/>
-      </BrowserRouter>)
-    expect(getByTestId('heading')).toHaveTextContent('Sign In')
-  })
 
   
 
@@ -46,7 +39,7 @@ it("renders heading correctly", ()=>{
     <BrowserRouter>
       <Signin/>
       </BrowserRouter>)
-    expect(getByTestId('button2')).toHaveTextContent('Forget Password')
+    expect(getByTestId('button2')).toHaveTextContent('Forget')
   })
 
   it('matches snapshot', ()=>{

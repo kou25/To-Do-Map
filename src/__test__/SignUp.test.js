@@ -12,11 +12,6 @@ it("render without crashing",()=>{
   <SignUp/>,div);
 })
 
-it("renders heading correctly", ()=>{
-    const{getByTestId}=render(
-    <SignUp/>)
-    expect(getByTestId('heading')).toHaveTextContent('Sign Up')
-  })
 
  
 

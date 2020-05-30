@@ -12,7 +12,7 @@ export default class SignUp extends Component {
         }
 
     
-    componentDidUpdate(nextProps, nextState){
+    componentWillUpdate(nextProps, nextState){
         localStorage.setItem('user', JSON.stringify(nextState))
     }
 

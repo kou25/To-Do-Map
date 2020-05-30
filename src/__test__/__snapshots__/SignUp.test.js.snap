@@ -5,116 +5,131 @@ exports[`matches snapshot 1`] = `
   className="container"
 >
   <div
-    className="d-sm-flex align-items-center justify-content-between mb-4"
-    data-testid="heading"
-  >
-    <h1
-      style={
-        Object {
-          "color": "#8B4513",
-          "fontFamily": "cursive",
-          "margin": "30px 30%",
-        }
-      }
-    >
-      Sign Up
-      <i
-        aria-hidden="true"
-        className="fa fa-user-plus"
-        style={
-          Object {
-            "color": "#8B4513",
-            "marginLeft": "20px",
-          }
-        }
-      />
-    </h1>
-  </div>
-  <form
-    onSubmit={[Function]}
+    className="base-container"
     style={
       Object {
-        "fontFamily": "cursive",
-        "marginLeft": "10%",
-        "width": "60%",
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "marginTop": "90px",
       }
     }
   >
     <div
-      className="form-group"
+      className="card shadow"
+      style={
+        Object {
+          "borderRadius": "20px",
+          "height": "40rem",
+          "width": "30rem",
+        }
+      }
     >
-      <label
-        htmlFor="exampleInputEmail1"
+      <div
+        className="content"
       >
-        Email address
-      </label>
-      <input
-        className="form-control"
-        id="email"
-        onChange={[Function]}
-        placeholder="Enter email"
-        required={true}
-        type="email"
-      />
-    </div>
-    <div
-      className="form-group"
-    >
-      <label
-        htmlFor="firstName"
+        <div
+          className="image"
+          style={
+            Object {
+              "marginLeft": "25%",
+              "marginTop": "40px",
+            }
+          }
+        >
+          <img
+            alt="logo"
+            src="signup.png"
+          />
+        </div>
+        <form
+          onSubmit={[Function]}
+          style={
+            Object {
+              "fontFamily": "cursive",
+              "marginLeft": "20%",
+              "marginTop": "20px",
+              "width": "60%",
+            }
+          }
+        >
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="exampleInputEmail1"
+            >
+              Email address
+            </label>
+            <input
+              className="form-control"
+              id="email"
+              onChange={[Function]}
+              placeholder="Enter email"
+              required={true}
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="exampleInputName"
+            >
+              Name
+            </label>
+            <input
+              className="form-control"
+              id="name"
+              onChange={[Function]}
+              placeholder="Enter name"
+              required={true}
+              type="name"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group mt-4 mb-5"
+          >
+            <label
+              htmlFor="exampleInputPassword1"
+            >
+              Password
+            </label>
+            <input
+              className="form-control"
+              id="password"
+              onChange={[Function]}
+              placeholder="Password"
+              required={true}
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            className="btn btn-success  shadow"
+            data-testid="button"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+      <div
+        className="right-side"
       >
-        First Name
-      </label>
-      <input
-        className="form-control"
-        id="firstName"
-        onChange={[Function]}
-        placeholder="first name"
-        required={true}
-        type="text"
-      />
+        <div
+          className="inner-container"
+        >
+          <div
+            className="text"
+          >
+            Sign Up
+          </div>
+        </div>
+      </div>
     </div>
-    <div
-      className="form-group"
-    >
-      <label
-        htmlFor="lastName"
-      >
-        Last Name
-      </label>
-      <input
-        className="form-control"
-        id="lastName"
-        onChange={[Function]}
-        placeholder="last name"
-        required={true}
-        type="text"
-      />
-    </div>
-    <div
-      className="form-group"
-    >
-      <label
-        htmlFor="exampleInputPassword1"
-      >
-        Password
-      </label>
-      <input
-        className="form-control"
-        id="password"
-        onChange={[Function]}
-        placeholder="Password"
-        required={true}
-        type="password"
-      />
-    </div>
-    <button
-      className="btn btn-warning shadow mb-2"
-      data-testid="button"
-      type="submit"
-    >
-      Sign Up
-    </button>
-  </form>
+  </div>
 </div>
 `;

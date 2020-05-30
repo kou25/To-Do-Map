@@ -204,106 +204,139 @@ exports[`matches snapshot 1`] = `
       className="container"
     >
       <div
-        className="d-sm-flex align-items-center justify-content-between mb-4"
-        data-testid="heading"
-      >
-        <h1
-          style={
-            Object {
-              "color": "#8B4513",
-              "fontFamily": "cursive",
-              "margin": "30px 30%",
-            }
-          }
-        >
-          Sign In
-          <i
-            className="fa fa-sign-in"
-            style={
-              Object {
-                "color": "#8B4513",
-                "marginLeft": "20px",
-              }
-            }
-          />
-        </h1>
-      </div>
-      <form
-        onSubmit={[Function]}
+        className="base-container"
         style={
           Object {
-            "fontFamily": "cursive",
-            "marginLeft": "10%",
-            "width": "60%",
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "marginTop": "100px",
           }
         }
       >
         <div
-          className="form-group"
+          className="card shadow"
+          style={
+            Object {
+              "borderRadius": "20px",
+              "height": "35rem",
+              "width": "30rem",
+            }
+          }
         >
-          <label
-            htmlFor="exampleInputEmail1"
+          <div
+            className="content"
           >
-            Email address
-          </label>
-          <input
-            className="form-control"
-            id="email"
-            onChange={[Function]}
-            placeholder="Enter email"
-            required={true}
-            type="email"
-          />
+            <div
+              className="image"
+              style={
+                Object {
+                  "marginLeft": "25%",
+                }
+              }
+            >
+              <img
+                alt="logo"
+                src="login.svg"
+              />
+            </div>
+            <form
+              onSubmit={[Function]}
+              style={
+                Object {
+                  "fontFamily": "cursive",
+                  "marginLeft": "20%",
+                  "width": "60%",
+                }
+              }
+            >
+              <div
+                className="form-group"
+              >
+                <label
+                  htmlFor="exampleInputEmail1"
+                >
+                  Email address
+                </label>
+                <input
+                  className="form-control"
+                  id="email"
+                  onChange={[Function]}
+                  placeholder="Enter email"
+                  required={true}
+                  type="email"
+                />
+              </div>
+              <div
+                className="form-group mt-4 mb-5"
+              >
+                <label
+                  htmlFor="exampleInputPassword1"
+                >
+                  Password
+                </label>
+                <input
+                  className="form-control"
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  required={true}
+                  type="password"
+                />
+              </div>
+              <button
+                className="btn btn-success mr-2 ml-3 shadow"
+                data-testid="button"
+                type="submit"
+              >
+                Sign In
+              </button>
+              <a
+                href="/signup"
+                onClick={[Function]}
+              >
+                <button
+                  className="btn btn-primary mr-2 shadow"
+                  data-testid="button1"
+                  type="submit"
+                >
+                  Sign Up
+                </button>
+              </a>
+              <a
+                href="/forget"
+                onClick={[Function]}
+              >
+                <button
+                  className="btn btn-danger shadow"
+                  data-testid="button2"
+                  type="submit"
+                >
+                  Forget 
+                </button>
+              </a>
+            </form>
+          </div>
+          <div
+            className="right-side"
+          >
+            <div
+              className="inner-container"
+            >
+              <div
+                className="text"
+                style={
+                  Object {
+                    "marginLeft": "87%",
+                  }
+                }
+              >
+                Login
+              </div>
+            </div>
+          </div>
         </div>
-        <div
-          className="form-group"
-        >
-          <label
-            htmlFor="exampleInputPassword1"
-          >
-            Password
-          </label>
-          <input
-            className="form-control"
-            id="password"
-            onChange={[Function]}
-            placeholder="Password"
-            required={true}
-            type="password"
-          />
-        </div>
-        <button
-          className="btn btn-warning mr-2 shadow"
-          data-testid="button"
-          type="submit"
-        >
-          Sign In
-        </button>
-        <a
-          href="/signup"
-          onClick={[Function]}
-        >
-          <button
-            className="btn btn-primary mr-2 shadow"
-            data-testid="button1"
-            type="submit"
-          >
-            Sign Up
-          </button>
-        </a>
-        <a
-          href="/forget"
-          onClick={[Function]}
-        >
-          <button
-            className="btn btn-danger shadow"
-            data-testid="button2"
-            type="submit"
-          >
-            Forget Password
-          </button>
-        </a>
-      </form>
+      </div>
     </div>
   </main>
 </div>

@@ -12,11 +12,6 @@ it("render without crashing",()=>{
   <Forget/>,div);
 })
 
-it("renders heading correctly", ()=>{
-    const{getByTestId}=render(
-    <Forget/>)
-    expect(getByTestId('heading')).toHaveTextContent('Sign In')
-  })
 
 
   it("renders button correctly", ()=>{
