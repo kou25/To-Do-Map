@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install -g json-server`
+
 ### `npm run json-server`
 for running jsonplacecholder
 
@@ -18,6 +20,10 @@ You will also see any lint errors in the console.
 ### `Login`
 email: koustav.manna98@gmail.com
 password: 1234
+
+else
+
+sign up
 
 ### `npm test`
 

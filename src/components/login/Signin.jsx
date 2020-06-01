@@ -40,16 +40,32 @@ import "./style.scss";
             const{email, password} = this.state
             
             //login
-            if(email=== this.userData.email && password===this.userData.password ){
+            if( email==="koustav.manna98@gmail.com" && password==="1234" ){
                 localStorage.setItem("token","ajdkkabkdj")
                 this.setState({
                     loggedIn: true
                 })  
-
             }
-            else{
-                alert("Wrong username or password!")
-            }      
+
+            
+            //for other user, just not to get an error
+            
+                else if(this.userData!==null){
+                    if(email=== this.userData.email && password===this.userData.password ){
+                        localStorage.setItem("token","ajdkkabkdj")
+                        this.setState({
+                            loggedIn: true
+                        })  
+        
+                    }
+                    else{
+                        alert("Wrong username or password!")
+                    }
+                }
+                else{
+                    alert("Wrong username or password!")
+                }
+                   
     }
 
     
@@ -98,6 +114,7 @@ import "./style.scss";
                 </form>
                 </div>
                 <RightSide/>
+                <small style={{marginLeft:'27%', marginTop:"20px"}}>If you don't have an account first <b>signUp</b></small>
             </div>
             </div>
             </div>
