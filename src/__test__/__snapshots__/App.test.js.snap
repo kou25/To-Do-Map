@@ -57,6 +57,21 @@ exports[`matches snapshot 1`] = `
       <div
         className="spacer"
       />
+      <div
+        className="nav-logos"
+      >
+        <a
+          href="./docs"
+          style={
+            Object {
+              "fontSize": "30px",
+              "textShadow": "1px 1px 2px black",
+            }
+          }
+        >
+          Docs
+        </a>
+      </div>
     </nav>
   </header>
   <nav
@@ -335,6 +350,19 @@ exports[`matches snapshot 1`] = `
               </div>
             </div>
           </div>
+          <small
+            style={
+              Object {
+                "marginLeft": "27%",
+                "marginTop": "20px",
+              }
+            }
+          >
+            If you don't have an account first 
+            <b>
+              signUp
+            </b>
+          </small>
         </div>
       </div>
     </div>

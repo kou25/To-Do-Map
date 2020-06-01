@@ -13,7 +13,9 @@ import ToggleButton from'../Sidebar/ToggleButton'
                 </a>
             </div>
             <div className="spacer"/>
-                    
+            <div className="nav-logos">
+            <a href='./docs' style={{ fontSize:"30px",textShadow:"1px 1px 2px black"}}>Docs</a>
+            </div>
             </nav>
         </header>
 )

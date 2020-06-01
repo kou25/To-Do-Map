@@ -53,6 +53,24 @@ exports[`matches snapshot 1`] = `
           }
         >
           <div
+            className="form-group"
+          >
+            <label
+              htmlFor="exampleInputEmail1"
+            >
+              Email address
+            </label>
+            <input
+              className="form-control"
+              id="email"
+              onChange={[Function]}
+              placeholder="Enter email"
+              required={true}
+              type="email"
+              value=""
+            />
+          </div>
+          <div
             className="form-group mt-3 mb-4"
           >
             <label
@@ -67,6 +85,7 @@ exports[`matches snapshot 1`] = `
               placeholder="Password"
               required={true}
               type="password"
+              value=""
             />
           </div>
           <div
@@ -84,6 +103,7 @@ exports[`matches snapshot 1`] = `
               placeholder="confirm"
               required={true}
               type="password"
+              value=""
             />
             <button
               className="btn btn-danger shadow mt-4"

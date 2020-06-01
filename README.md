@@ -4,7 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install` 
+to install all dependency
+
 ### `npm install -g json-server`
+for runing json server
 
 ### `npm run json-server`
 for running jsonplacecholder

@@ -49,6 +49,21 @@ exports[`matches snapshot 1`] = `
     <div
       className="spacer"
     />
+    <div
+      className="nav-logos"
+    >
+      <a
+        href="./docs"
+        style={
+          Object {
+            "fontSize": "30px",
+            "textShadow": "1px 1px 2px black",
+          }
+        }
+      >
+        Docs
+      </a>
+    </div>
   </nav>
 </header>
 `;

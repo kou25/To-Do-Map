@@ -17,6 +17,7 @@ import SignUp from './components/login/SignUp';
 import Forget from './components/login/Forget';
 import Map from './components/map/Map'
 import Logout from './components/logout/Logout';
+import Docs from './components/navbar/Docs'
 
 
 
@@ -61,6 +62,7 @@ class App extends Component {
         <Route exact path="/add" component={Add} />
         <Route exact path="/view" component={View} />
         <Route exact path="/map" component={Map} />
+        <Route exact path="/docs" component={Docs} />
         <Route exact path="/todo/edit/:id" component={Edit} />
         <Route exact path="/more/:id" component={More} />
         </Switch>

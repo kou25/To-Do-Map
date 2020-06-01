@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container mt-5 "
+  style={
+    Object {
+      "marginLeft": "30%",
+    }
+  }
+>
+  <iframe
+    src="Docs.pdf"
+    style={
+      Object {
+        "height": "700px",
+        "width": "58%",
+      }
+    }
+    title="Docs"
+  />
+</div>
+`;

@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Adventure",
       "desc": "1. Trekking\n"
+    },
+    {
+      "name": "shopping",
+      "desc": "1. Baby Products\n2. Groceries",
+      "id": 5
     }
   ]
 }
