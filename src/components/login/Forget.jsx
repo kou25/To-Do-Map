@@ -4,10 +4,16 @@ import "./style.scss";
 
 
  class Forget extends Component {
-   
+    userData;
+
     state={
+            email:'',
             password:'',
             password2:''
+        }
+
+        componentWillUpdate(nextProps, nextState){
+            localStorage.setItem('user', JSON.stringify(nextState))
         }
         
         handleChange=(e)=>{
@@ -20,7 +26,6 @@ import "./style.scss";
         handleSubmit=(e)=>{
             const { password, password2 } = this.state;
             e.preventDefault()
-            console.log(this.state)
             if(password !== password2){
                 alert('Password does not match !')
             }
@@ -40,6 +45,16 @@ import "./style.scss";
                         <img src={loginImg} alt="logo"/>
                     </div>
                 <form onSubmit={this.handleSubmit} style={{width:"60%",fontFamily:"cursive", marginLeft:"10%"}}>
+                <div className="form-group">
+                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <input type="email" 
+                    className="form-control" 
+                    placeholder="Enter email"
+                    id="email"
+                    onChange={this.handleChange}
+                    value={this.state.email}
+                    required/>
+                </div>
                 <div className="form-group mt-3 mb-4">
                     <label htmlFor="exampleInputPassword1">Password</label>
                     <input type="password" 
@@ -47,6 +62,7 @@ import "./style.scss";
                      placeholder="Password"
                      id="password"
                      onChange={this.handleChange}
+                     value={this.state.password}
                      required/>
                 </div>
                 <div className="form-group mt-2 ">
@@ -56,6 +72,7 @@ import "./style.scss";
                      placeholder="confirm"
                      id="password2"
                      onChange={this.handleChange}
+                     value={this.state.password2}
                      required/>
                  <button data-testid="button" type="submit" className="btn btn-danger shadow mt-4"
                 >Reset </button>
