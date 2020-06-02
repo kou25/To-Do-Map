@@ -2,22 +2,92 @@
 
 exports[`matches snapshot 1`] = `
 <div
-  className="container mt-5 "
+  className="container"
   style={
     Object {
-      "marginLeft": "30%",
+      "justifyContent": "center",
     }
   }
 >
-  <iframe
-    src="Docs.pdf"
+  <nav
     style={
       Object {
-        "height": "700px",
-        "width": "58%",
+        "display": "flex",
+        "marginLeft": "15%",
+        "marginTop": "25px",
       }
     }
-    title="Docs"
-  />
+  >
+    <button
+      className="btn btn-danger shadow"
+      onClick={[Function]}
+    >
+      Prev
+    </button>
+    <button
+      className="btn btn-success shadow ml-2 mr-5"
+      onClick={[Function]}
+    >
+      Next
+    </button>
+    <span
+      style={
+        Object {
+          "marginLeft": "50%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "paddingTop": "10px",
+          }
+        }
+      >
+        Page 
+        <span
+          style={
+            Object {
+              "color": "red",
+            }
+          }
+        >
+          1
+        </span>
+         of 
+      </p>
+    </span>
+  </nav>
+  <div
+    className="row"
+    style={
+      Object {
+        "justifyContent": "center",
+        "paddingTop": "10px",
+        "width": "800",
+      }
+    }
+  >
+    <div
+      className="card shadow p-5"
+      style={
+        Object {
+          "marginBottom": "100px",
+        }
+      }
+    >
+      <div
+        className="react-pdf__Document"
+      >
+        <div
+          className="react-pdf__message react-pdf__message--loading"
+        >
+          Loading PDF…
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
