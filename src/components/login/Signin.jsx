@@ -20,7 +20,7 @@ import "./style.scss";
     this.state={
             email:'',
             password:'',
-            loggedIn
+            loggedIn,
             
         }
     }
@@ -67,10 +67,12 @@ import "./style.scss";
                 else{
                     alert("Wrong username or password!")
                 }
+                
                    
     }
 
     
+
 
     render() {
         if(this.state.loggedIn){

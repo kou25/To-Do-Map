@@ -52,6 +52,7 @@
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "i18n-webpack-plugin": "^1.0.0",
     "jest-dom": "^4.0.0",
     "node-sass": "^4.14.1",
     "react-test-renderer": "^16.13.1"

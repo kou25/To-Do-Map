@@ -54,7 +54,7 @@ class Add extends Component {
                                <div className="form-group">
                                     <label htmlFor="description">To Dos</label>
                                     <br/>
-                                    <small>Add todo in each line</small>
+                                    <small>Add todo in each line (press enter for new line)</small>
                                     <textarea
                                     name="desc" 
                                     type="desc"
