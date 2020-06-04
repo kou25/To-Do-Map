@@ -34,6 +34,7 @@ import { getTodos,setLoading } from '../../actions/todoAction';
     }
         const{ todos, loading }=this.props; 
         return (
+          <React.Fragment>
             <div className="container">
                  <div className="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 data-testid="heading" style={{color:"#8B4513",textShadow:"1px 1px 2px black",  fontFamily:"cursive", marginLeft:"35%", marginTop:"50px"}}>
@@ -66,6 +67,9 @@ import { getTodos,setLoading } from '../../actions/todoAction';
                 </table>
             }
             </div>
+            </React.Fragment>
+           
+            
         )
     }
 }

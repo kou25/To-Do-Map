@@ -67,12 +67,13 @@ box-shadow: -1px 4px 12px 1px rgba(0,0,0,0.5);
 
 #img{
     background-image: url("./components/Landing/Landing.jpg");
-    height: 90vh;
+    height: 91vh;
     width: 100%;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 tbody:nth-of-type(even) {
     background-color: #e9e9f9 ;
 }

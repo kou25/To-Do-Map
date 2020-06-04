@@ -11,7 +11,7 @@ class Todo extends Component {
     render() {
       const{id, name}=this.props.todo
         return (
-            <tbody >
+            <tbody  >
                 <tr>
                   <td style={{fontSize: "15pt",paddingLeft:"10%"}}> {name}
                   </td>
@@ -20,7 +20,8 @@ class Todo extends Component {
                     <span
                       className="fas fa-pencil-alt"
                       style={{
-                        color: "black",
+                        textShadow:"1px 1px 2px white",
+                        color: "#8B4513",
                         fontSize: "15pt",
                         marginRight: "10px"
                       }}
@@ -35,7 +36,7 @@ class Todo extends Component {
                   </td>
                   
                   <td><Link to={`more/${id}`}><span className="far fa-arrow-alt-circle-right" 
-                  style={{color:"black", marginLeft:"35%", fontSize: "20pt", cursor:"pointer"}}></span>
+                  style={{color:"#8B4513",textShadow:"1px 1px 2px black", marginLeft:"35%", fontSize: "20pt", cursor:"pointer"}}></span>
                 </Link>
                 </td>
                 </tr>

@@ -2,18 +2,13 @@
   "todos": [
     {
       "id": 1,
-      "name": "Kids",
-      "desc": "1. buy toys\n2. buy medicines\n3. check ups"
-    },
-    {
-      "id": 2,
       "name": "Sports",
       "desc": "1. Buy Ball\n2. Match at 3 Pm"
     },
     {
       "name": "Trips",
       "desc": "1. Manali Trip\n ",
-      "id": 3
+      "id": 2
     },
     {
       "id": 4,
