@@ -15,7 +15,7 @@ import More from './containers/more/More';
 import Signin from './components/login/Signin';
 import SignUp from './components/login/SignUp';
 import Forget from './components/login/Forget';
-import Map from './components/map/Map'
+import Map from './containers/map/Map'
 import Logout from './components/logout/Logout';
 import Docs from './components/navbar/Docs'
 

@@ -38,31 +38,33 @@ import { getTodos,setLoading } from '../../actions/todoAction';
                  <div className="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 data-testid="heading" style={{color:"#8B4513",textShadow:"1px 1px 2px black",  fontFamily:"cursive", marginLeft:"35%", marginTop:"50px"}}>
                         View To-DO<i className="fa fa-eye" aria-hidden="true" style={{marginLeft:"20px", color:"#8B4513"}}></i></h1>
-                </div>
-                {loading ? <Spinner/>:
+                  </div>
+
+                    {loading ? <Spinner/>:
+
                 <table
-            className="table table-hover  shadow" 
-            style={{width: "55%",fontFamily:"cursive",
-            borderRadius:"15px", marginLeft:"25%"}}
-          >
-                <thead style={{backgroundColor:"orange"}}>
-              <tr >
-                <th style={{paddingLeft:"10%"}} scope="col" >Todos</th>
-                <th style={{marginLeft:"9%"}} scope="col">Actions</th>
-                <th style={{paddingLeft:"10%"}} scope="col">View more</th>
-              </tr>
-            </thead>
-               {todos.map(todo=>(
-                   <Todo 
-                   key={todo.id}
-                   todo={todo} 
-                   />
-               ))} 
+                  className="table table-hover  shadow" 
+                  style={{width: "55%",fontFamily:"cursive",
+                  borderRadius:"15px", marginLeft:"25%"}}
+                >
+                    <thead style={{backgroundColor:"orange"}}>
+                  <tr >
+                    <th style={{paddingLeft:"10%"}} scope="col" >Todos</th>
+                    <th style={{marginLeft:"9%"}} scope="col">Actions</th>
+                    <th style={{paddingLeft:"10%"}} scope="col">View more</th>
+                  </tr>
+                    </thead>
+
+                  {todos.map(todo=>(
+                      <Todo 
+                      key={todo.id}
+                      todo={todo} 
+                      />
+                      
+                  ))} 
                
-               </table>
-               
+                </table>
             }
-           
             </div>
         )
     }
